@@ -1,0 +1,6 @@
+# Only the published website (docs/) and its publish script go to GitHub.
+# Everything else here (product masters, ebook PDFs, Etsy files, notes) stays private on this PC.
+/*
+!/.gitignore
+!/publish.ps1
+!/docs/
