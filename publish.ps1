@@ -8,6 +8,7 @@ if (Test-Path $out) { Get-ChildItem $out -Force | Where-Object { $_.Name -ne '.g
 New-Item -ItemType Directory -Force $out | Out-Null
 
 Copy-Item (Join-Path $root 'index.html') $out
+Copy-Item (Join-Path $root 'sitemap.xml'), (Join-Path $root 'robots.txt') $out
 Copy-Item (Join-Path $root 'assets') (Join-Path $out 'assets') -Recurse
 Get-ChildItem (Join-Path $out 'assets') -Filter '*.bak*' | Remove-Item
 

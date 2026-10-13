@@ -4,3 +4,5 @@
 !/.gitignore
 !/publish.ps1
 !/docs/
+!/sitemap.xml
+!/robots.txt
